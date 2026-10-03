@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Daily Brew, a simple café website made with Bootstrap."
+    />
+    <title>Daily Brew | Coffee & Good Company</title>
+    <link rel="stylesheet" href="assets/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="visually-hidden-focusable p-3 bg-white d-block" href="#main"
+      >Skip to content</a
+    >
+
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark py-3"
+      aria-label="Main navigation"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home"
+          >Daily Brew<span class="text-warning">.</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul
+            class="navbar-nav ms-auto align-items-lg-center gap-lg-3 mt-3 mt-lg-0"
+          >
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-outline-light btn-sm mt-2 mt-lg-0"
+                href="#contact"
+                >Visit us &rarr;</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main">
+      <section class="container py-5" id="home" aria-labelledby="homeTitle">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-sm-12 col-lg-6">
+            <p class="text-uppercase small fw-bold text-success mb-3">
+              Your everyday coffee stop
+            </p>
+            <h1 class="display-3 fw-bold mb-4" id="homeTitle">
+              A little pause.<br />A good cup.
+            </h1>
+            <p class="lead text-secondary mb-4">
+              Fresh coffee, warm pastries, and a cozy corner to call your own.
+              Take a break with Daily Brew.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a class="btn btn-success btn-lg" href="#menu"
+                >Explore the menu</a
+              >
+              <a class="btn btn-outline-dark btn-lg" href="#about">Our story</a>
+            </div>
+            <p class="small text-secondary mt-4 mb-0">
+              Brewed fresh. Served with a smile.
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-lg-6">
+            <div
+              id="coffeeCarousel"
+              class="carousel slide rounded-4 overflow-hidden"
+              role="region"
+              aria-roledescription="carousel"
+              aria-label="Café favorites"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#coffeeCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Show espresso"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#coffeeCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Show iced latte"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#coffeeCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Show croissant"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/images/espresso.svg"
+                    class="d-block w-100 h-auto"
+                    width="800"
+                    height="600"
+                    alt="Illustration of a fresh espresso in a cream cup on a terracotta table"
+                  />
+                  <div
+                    class="carousel-caption position-static w-100 pt-3 pb-5 px-3"
+                  >
+                    <p class="h6 mb-0">A classic, made with care.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/latte.svg"
+                    class="d-block w-100 h-auto"
+                    width="800"
+                    height="600"
+                    alt="Illustration of an iced latte with a straw on a green background"
+                  />
+                  <div
+                    class="carousel-caption position-static w-100 pt-3 pb-5 px-3"
+                  >
+                    <p class="h6 mb-0">Your afternoon pick-me-up.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/croissant.svg"
+                    class="d-block w-100 h-auto"
+                    width="800"
+                    height="600"
+                    alt="Illustration of a golden croissant on a cream plate"
+                  />
+                  <div
+                    class="carousel-caption position-static w-100 pt-3 pb-5 px-3"
+                  >
+                    <p class="h6 mb-0">Something warm. Something golden.</p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#coffeeCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous slide</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#coffeeCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next slide</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="container py-4 py-lg-5"
+        id="menu"
+        aria-labelledby="menuTitle"
+      >
+        <div
+          class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-4"
+        >
+          <div>
+            <p class="text-uppercase small fw-bold text-success mb-2">
+              The short list
+            </p>
+            <h2 class="display-6 fw-bold mb-0" id="menuTitle">
+              House favorites
+            </h2>
+          </div>
+          <p class="text-secondary mb-0">Simple ingredients. Happy moments.</p>
+        </div>
+
+        <div class="row card-group g-4">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <article
+              class="card h-100 border-0 rounded-4 overflow-hidden shadow-sm"
+            >
+              <img
+                src="assets/images/espresso.svg"
+                class="card-img-top"
+                width="800"
+                height="600"
+                alt="Espresso in a cream ceramic cup"
+                loading="lazy"
+              />
+              <div class="card-body p-4">
+                <div
+                  class="d-flex justify-content-between align-items-baseline gap-2 mb-2"
+                >
+                  <h3 class="card-title h5 fw-bold mb-0">Classic espresso</h3>
+                  <span class="text-success fw-bold text-nowrap">900 ₸</span>
+                </div>
+                <p class="card-text text-secondary mb-0">
+                  Rich, smooth, and full of flavor. A small cup for a fresh
+                  start.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <article
+              class="card h-100 border-0 rounded-4 overflow-hidden shadow-sm"
+            >
+              <img
+                src="assets/images/latte.svg"
+                class="card-img-top"
+                width="800"
+                height="600"
+                alt="A glass of iced latte with milk and coffee layers"
+                loading="lazy"
+              />
+              <div class="card-body p-4">
+                <div
+                  class="d-flex justify-content-between align-items-baseline gap-2 mb-2"
+                >
+                  <h3 class="card-title h5 fw-bold mb-0">Iced latte</h3>
+                  <span class="text-success fw-bold text-nowrap">1,400 ₸</span>
+                </div>
+                <p class="card-text text-secondary mb-0">
+                  Our signature espresso over ice and milk. Cool, creamy, and
+                  refreshing.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <article
+              class="card h-100 border-0 rounded-4 overflow-hidden shadow-sm"
+            >
+              <img
+                src="assets/images/croissant.svg"
+                class="card-img-top"
+                width="800"
+                height="600"
+                alt="A golden butter croissant served on a plate"
+                loading="lazy"
+              />
+              <div class="card-body p-4">
+                <div
+                  class="d-flex justify-content-between align-items-baseline gap-2 mb-2"
+                >
+                  <h3 class="card-title h5 fw-bold mb-0">Butter croissant</h3>
+                  <span class="text-success fw-bold text-nowrap">1,100 ₸</span>
+                </div>
+                <p class="card-text text-secondary mb-0">
+                  Golden layers with a soft, buttery center. Your coffee's
+                  perfect companion.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-5" id="about" aria-labelledby="aboutTitle">
+        <div
+          class="row g-4 g-lg-5 align-items-center bg-white rounded-4 p-3 p-lg-5 mx-0"
+        >
+          <div class="col-lg-6 mt-0">
+            <p class="text-uppercase small fw-bold text-success mb-2">
+              Meet Daily Brew
+            </p>
+            <h2 class="display-6 fw-bold mb-0" id="aboutTitle">
+              Good coffee.<br />Even better company.
+            </h2>
+          </div>
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <p class="text-secondary mb-3">
+              We believe the best part of the day can be the simplest: a freshly
+              brewed cup, a favorite pastry, and a conversation with a friend.
+            </p>
+            <p class="text-secondary mb-0">
+              Our little café is a place to slow down, catch up, or get a little
+              work done. There is always a seat for you.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-dark text-white py-5"
+        id="contact"
+        aria-labelledby="contactTitle"
+      >
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-6">
+              <p class="text-uppercase small text-warning fw-bold mb-2">
+                Come say hello
+              </p>
+              <h2 class="h1 fw-bold mb-3" id="contactTitle">
+                Your next break starts here.
+              </h2>
+              <p class="text-white-50 mb-0">
+                A fictional café, created for a Bootstrap midterm project.
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-4 offset-lg-2">
+              <h3 class="h5 mb-3">Opening hours</h3>
+              <p class="mb-2">
+                Monday – Friday <span class="float-end">08:00 – 20:00</span>
+              </p>
+              <p class="mb-0">
+                Saturday – Sunday <span class="float-end">09:00 – 21:00</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="container d-flex flex-wrap justify-content-between align-items-center gap-3 py-4"
+    >
+      <p class="small text-secondary mb-0">
+        Daily Brew · Student project · 2026
+      </p>
+      <a class="btn btn-outline-dark btn-sm" href="#home">Back to top &uarr;</a>
+    </footer>
+
+    <script src="assets/vendor/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

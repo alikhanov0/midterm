@@ -1,0 +1,25 @@
+/* Bootstrap handles layout and spacing. */
+body {
+  background-color: #f6f3ed;
+  color: #252b28;
+}
+
+h1, h2, .navbar-brand {
+  letter-spacing: -0.04em;
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* A dark strip keeps carousel captions readable. */
+.carousel-caption {
+  background-color: #252b28;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #252b28;
+  border-radius: 50%;
+}
