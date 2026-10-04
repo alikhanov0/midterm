@@ -4,13 +4,13 @@
 
 Photographs are from [Unsplash](https://unsplash.com), downloaded and resized to WebP for this project. See the [Unsplash license](https://unsplash.com/license).
 
-| Local file | Original photograph |
-| --- | --- |
+| Local file                  | Original photograph                                          |
+| --------------------------- | ------------------------------------------------------------ |
 | `images/coffee-moment.webp` | https://images.unsplash.com/photo-1509042239860-f550ce710b93 |
-| `images/espresso.webp` | https://images.unsplash.com/photo-1510707577719-ae7c14805e3a |
-| `images/iced-latte.webp` | https://images.unsplash.com/photo-1461023058943-07fcbe16d735 |
-| `images/croissant.webp` | https://images.unsplash.com/photo-1555507036-ab1f4038808a |
-| `images/cafe.webp` | https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb |
+| `images/espresso.webp`      | https://images.unsplash.com/photo-1510707577719-ae7c14805e3a |
+| `images/iced-latte.webp`    | https://images.unsplash.com/photo-1461023058943-07fcbe16d735 |
+| `images/croissant.webp`     | https://images.unsplash.com/photo-1555507036-ab1f4038808a    |
+| `images/cafe.webp`          | https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb |
 
 ## Fonts
 
